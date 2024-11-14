@@ -509,9 +509,12 @@ load-bar {
   position: fixed;
   top: 0;
   left: 0;
+  font-family: "Passion One", cursive;
+  color: white;
   font-size: 2rem;
   width: 100vw;
   height: 100vh;
+  background: #111;
 }
   .noise {
     &:before {
@@ -1050,7 +1053,10 @@ pre {
 
 
 
-
+body {
+  background: linear-gradient(135deg, #413c69, #4a47a3, #ff77ff);
+  color: #ffffff;
+}
 
     .retro-table2 {
        width: 79.5%;
