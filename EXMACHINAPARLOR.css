@@ -48,7 +48,6 @@ p {
   opacity: 0% !important;
 }
 
-}
 .wrapper{
   width: 100%;
   display: flex;
@@ -99,9 +98,9 @@ p {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
+
 #EXMACHINAPARLOR2 {
   margin-top: -150px;
   text-align: center;
@@ -201,9 +200,6 @@ p {
 
     */
 
-}
-
-
 * {
     flex-direction: column; 
 }
@@ -236,10 +232,6 @@ section, div, h1, h2, p, ul, li {
     float: none;
     display: block;
   
-}
-
-
-}
 }
 
 /*
@@ -340,7 +332,6 @@ section, div, h1, h2, p, ul, li {
 }
 
 .js #loader {
-  block;
   position: absolute;
   left: 100px;
   top: 0;
@@ -545,7 +536,6 @@ load-bar {
       animation-delay: calc(60ms * var(--char-index));
       color: white;
     }
-  }
 
   .time {
     position: absolute;
@@ -562,7 +552,6 @@ load-bar {
     will-change: text-shadow;
     animation: rgbText 1s steps(9) 0s infinite alternate;
   }
-}
 
 @keyframes noise {
   0%,
@@ -699,13 +688,13 @@ load-bar {
 
 img {
   display: block;
-  position: relative;
+  position: absolute;
   align-items: center;
   margin-top: -220px;
   margin-bottom: -250px;
   margin-left: -50px;
   justify-content: center;
-  transform: scale(0.7) !important;
+  transform: scale(0.3) !important;
    transform: translate(0%, 28.5%);
   z-index: 5;
   user-select: none !important;
@@ -844,7 +833,7 @@ h3 {
   button:active {
 }
 */
-}
+
 nav {
   display: block;
   text-align: center;
@@ -1046,12 +1035,6 @@ pre {
   animation: blink 1s infinite;
   -webkit-animation: blink 5s infinite;
 }
-
-
-
-
-
-
 
 body {
   background: linear-gradient(135deg, #413c69, #4a47a3, #ff77ff);
