@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', () => {
+  loadPageWithAnimation('page1'); // Ensure DOM is fully loaded before calling this
+});
 
 function loadPageWithAnimation(pageId) {
   const container = document.getElementById('animationContainer');
@@ -19,16 +22,13 @@ function loadPageWithAnimation(pageId) {
 -->
 <!-- #end load bar-->
   `;
+  const sections = document.querySelectorAll('#content section');
+  sections.forEach(section => section.classList.remove('active'));
+  document.getElementById(pageId).classList.add('active');
   setTimeout(() => {
-    container.innerHTML = '';
-    const sections = document.querySelectorAll('#content section');
-    sections.forEach(section => section.classList.remove('active'));
-    document.getElementById(pageId).classList.add('active');
+    container.innerHTML = ''; 
   }, 0);
 }
-window.onload = function() {
-  loadPageWithAnimation('page1');
-};
 
 //end of transition tool
 
