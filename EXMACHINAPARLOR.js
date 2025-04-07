@@ -31,6 +31,11 @@ function loadPageWithAnimation(pageId) {
     if (targetHeading) {
       targetHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+  } else if (pageId == 'page1') {
+    const targetHeading = document.querySelector(`h1`);
+    if (targetHeading) {
+      targetHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
   setTimeout(() => {
