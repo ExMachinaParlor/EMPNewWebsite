@@ -25,6 +25,14 @@ function loadPageWithAnimation(pageId) {
   const sections = document.querySelectorAll('#content section');
   sections.forEach(section => section.classList.remove('active'));
   document.getElementById(pageId).classList.add('active');
+
+  if (pageId !== 'page1') {
+    const targetHeading = document.querySelector(`#${pageId} h2`);
+    if (targetHeading) {
+      targetHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
   setTimeout(() => {
     container.innerHTML = ''; 
   }, 0);
