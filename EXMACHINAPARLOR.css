@@ -185,6 +185,7 @@ p {
 }
 
   #content section {
+            margin-top: 150px;
             display: none;
         }
         #content .active {
