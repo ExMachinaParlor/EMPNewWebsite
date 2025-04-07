@@ -1,3 +1,37 @@
+
+function loadPageWithAnimation(pageId) {
+  const container = document.getElementById('animationContainer');
+  container.innerHTML = `
+   <!-- #start  load bar -->
+<!--
+      <div class="intro-wrap">
+        <div class="noise"></div>
+        <div class="noise noise-moving"></div>
+        <div class="pre-load">
+          <div class="load-wrap">
+            <div id="load-bar">
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+-->
+<!-- #end load bar-->
+  `;
+  setTimeout(() => {
+    container.innerHTML = '';
+    const sections = document.querySelectorAll('#content section');
+    sections.forEach(section => section.classList.remove('active'));
+    document.getElementById(pageId).classList.add('active');
+  }, 0);
+}
+window.onload = function() {
+  loadPageWithAnimation('page1');
+};
+
+//end of transition tool
+
 Math.Ran = function (max) {
   let rn = Math.round(Math.random() * max);
   rn *= Math.random() > 0.5 ? -1 : 1;
