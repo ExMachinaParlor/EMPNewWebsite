@@ -16,7 +16,8 @@
 <div class="scanlines"></div>
 -->
 
-
+<!-- #start  load bar -->
+<!--
 <div class="intro-wrap">
   <div class="noise"></div>
   <div class="noise noise-moving"></div>
@@ -28,6 +29,8 @@
 
     </div>
   </div>
+-->
+<!-- #end  load bar -->
 
 <!--
   <div class="scanlines"></div>
@@ -344,12 +347,13 @@ The Strix Interceptor is an open-source UAV developed for drone interception and
         </div>
 
         <div id="animationContainer"></div>
-        
 
         <script>
           function loadPageWithAnimation(pageId) {
             const container = document.getElementById('animationContainer');
             container.innerHTML = `
+             <!-- #start  load bar -->
+        <!--
                 <div class="intro-wrap">
                   <div class="noise"></div>
                   <div class="noise noise-moving"></div>
@@ -361,13 +365,16 @@ The Strix Interceptor is an open-source UAV developed for drone interception and
                     </div>
                   </div>
                 </div>
+                
+        -->
+        <!-- #end load bar-->
             `;
             setTimeout(() => {
               container.innerHTML = '';
               const sections = document.querySelectorAll('#content section');
               sections.forEach(section => section.classList.remove('active'));
               document.getElementById(pageId).classList.add('active');
-            }, 2000);
+            }, 0);
           }
           window.onload = function() {
             loadPageWithAnimation('page1');
