@@ -136,7 +136,7 @@ p {
     top: 0;
     left:0;
     z-index:10;
-     color: #00ffff;
+     color: #fb138f;
     animation: random2 3000ms steps(2) alternate infinite;
     
   }
