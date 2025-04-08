@@ -528,22 +528,6 @@ load-bar {
       color: white;
     }
 
-  .time {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    will-change: text-shadow;
-    animation: rgbText 1s steps(9) 0s infinite alternate;
-  }
-
-  .recordSpeed {
-    position: absolute;
-    left: 2rem;
-    bottom: 2rem;
-    will-change: text-shadow;
-    animation: rgbText 1s steps(9) 0s infinite alternate;
-  }
-
 @keyframes noise {
   0%,
   100% {
