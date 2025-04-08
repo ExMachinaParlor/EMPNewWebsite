@@ -521,14 +521,6 @@ load-bar {
     animation: rgbText 2s steps(9) 0s infinite alternate;
 }
 
-.location {
-    z-index: 9999999999999999999999999999999999999999;
-    position: absolute;
-    left: 2rem;
-    top: 2rem;
-    will-change: text-shadow;
-    animation: rgbText 2s steps(9) 0s infinite alternate;
-}
     .char {
       will-change: opacity;
       animation: type 1.2s infinite alternate;
