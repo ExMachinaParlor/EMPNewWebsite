@@ -911,6 +911,7 @@ pre {
   margin-left: auto;
   font-size: 20%;
   font-family: "VT323", monospace;
+  position: relative;
   text-align: center;
   justify-content: center;
   display: block;
@@ -1057,18 +1058,6 @@ body {
 }
 
 
-.neon-container {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: nowrap;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  justify-content: center !important;
-  place-items: center !important;
-  align-items: center !important;
-  margin-bottom: -90px;
-}
-
 .neon {
   font-family: "VT323", monospace;
   font-size: 50px;
@@ -1079,20 +1068,6 @@ body {
   z-index: 5;
   letter-spacing: 1px;
 }
-
-.neon-tab {
-  display: inline-block;
-  align: center;
-  width: 5000px;
-  margin-right: auto;
-  margin-left: auto;
-  height: 100px;
-  z-index: 0;
-  transform: translateY(160%);
-   background-color: #1a1a2e;
-  border-collapse: collapse;
-      border: 2px solid #ff77ff;    
-} 
 
 img {
   display: inline;
