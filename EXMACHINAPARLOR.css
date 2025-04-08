@@ -721,7 +721,7 @@ text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 20px #ffa5
   text-align: center;
   animation: blink 1s infinite;
   -webkit-animation: blink 5s infinite;
-
+  text-decoration: underline;
 }
 
 body {
