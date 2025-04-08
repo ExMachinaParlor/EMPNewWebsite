@@ -101,10 +101,11 @@ p {
 }
 
 #EXMACHINAPARLOR2 {
+  margin-top: -60px;
   text-align: center;
-  letter-spacing: 30px;
+  letter-spacing: 20px;
   filter: drop-shadow(0 0 10px hsl(306, 100%, 50%));
-  font-size: 50px;
+  font-size: 30px;
   position: relative;
   z-index: 2;
   font-family: 'Passion One', cursive;
