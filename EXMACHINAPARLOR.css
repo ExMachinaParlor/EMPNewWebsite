@@ -112,13 +112,12 @@ p {
   font-style: normal;
 }
     
-
   .text2 {
   &:nth-child(1){
     
    top: 0;
     left:0;
-    color:  hsl(320, 100%, 68%);
+    color: rgb(255, 178, 0);
     z-index: 5;
   }
   
@@ -127,8 +126,7 @@ p {
     top: 0;
     left:0;
     z-index:10;
-    color: hsl(219, 100%, 64%);
-    color: rgb(255, 178, 0);
+    color: hsl(0, 100%, 68%);
     animation: random1 3000ms steps(2) alternate infinite;
   }
   
@@ -137,15 +135,13 @@ p {
     top: 0;
     left:0;
     z-index:10;
-     color: #fb138f;
+    color: #fffb00;
     animation: random2 3000ms steps(2) alternate infinite;
     
   }
+}
 
-    
-    
-    
-    
+
     /*
 }
 .BLUEBOX2{
