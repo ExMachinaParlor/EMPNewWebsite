@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-  loadPageWithAnimation('page1'); // Ensure DOM is fully loaded before calling this
+document.addEventListener("DOMContentLoaded", () => {
+  loadPageWithAnimation("page1");
 });
 
 function loadPageWithAnimation(pageId) {
-  const container = document.getElementById('animationContainer');
+  const container = document.getElementById("animationContainer");
   container.innerHTML = `
    <!-- #start  load bar -->
 <!--
@@ -22,24 +22,24 @@ function loadPageWithAnimation(pageId) {
 -->
 <!-- #end load bar-->
   `;
-  const sections = document.querySelectorAll('#content section');
-  sections.forEach(section => section.classList.remove('active'));
-  document.getElementById(pageId).classList.add('active');
+  const sections = document.querySelectorAll("#content section");
+  sections.forEach((section) => section.classList.remove("active"));
+  document.getElementById(pageId).classList.add("active");
 
-  if (pageId !== 'page1') {
+  if (pageId !== "page1") {
     const targetHeading = document.querySelector(`#${pageId} h2`);
     if (targetHeading) {
-      targetHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      targetHeading.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  } else if (pageId == 'page1') {
+  } else if (pageId == "page1") {
     const targetHeading = document.querySelector(`h1`);
     if (targetHeading) {
-      targetHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      targetHeading.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }
 
   setTimeout(() => {
-    container.innerHTML = ''; 
+    container.innerHTML = "";
   }, 0);
 }
 
@@ -123,12 +123,15 @@ $(window).on("mousemove", moveCircle);
 
 $("a").hover(hoverFunc, unhoverFunc);
 
-$(window).on('load', function () {
-  $(".pre-load").css("z-index", "9999999999999999999999999999999999999999999999999999999999999999999999999999999999")
+$(window).on("load", function () {
+  $(".pre-load")
+    .css(
+      "z-index",
+      "9999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+    )
     .delay(3000)
     .fadeOut("slow");
 });
-
 
 console.clear();
 Splitting();
@@ -163,14 +166,14 @@ function showTime() {
 
 showTime();
 
-     const neonLinks = document.querySelectorAll('.neon');
+const neonLinks = document.querySelectorAll(".neon");
 
-    neonLinks.forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault();
-        this.classList.add('hidden');
-        setTimeout(() => {
-          this.classList.remove('hidden');
-        }, 2000);
-      });
-    });
+neonLinks.forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    this.classList.add("hidden");
+    setTimeout(() => {
+      this.classList.remove("hidden");
+    }, 2000);
+  });
+});
